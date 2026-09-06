@@ -1,0 +1,17 @@
+{
+  "enemies": [
+    {
+      "actions": 2,
+      "behavior": "baseline",
+      "handle": "RELAY",
+      "hp": 20,
+      "id": "relay_runner",
+      "interface": 3,
+      "programs": [
+        "Hellbolt"
+      ]
+    }
+  ],
+  "format": "netrun-enemy-catalog",
+  "version": 1
+}

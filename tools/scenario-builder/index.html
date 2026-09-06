@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
+    />
+    <title>NETRUN // RED — Offline Scenario Builder</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="firmware-data.js"></script>
+    <script defer src="model.js"></script>
+    <script defer src="preview.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <span class="brand">NETRUN <span>// RED</span></span>
+        <h1>Scenario Builder</h1>
+      </div>
+      <div class="offline">
+        ● OFFLINE / PUBLIC SCHEMA 1<br /><small
+          >Local files. No device connection.</small
+        >
+      </div>
+    </header>
+    <div class="toolbar">
+      <button id="new">New document</button
+      ><button id="examples">Load starter set</button
+      ><button id="import">Import JSON…</button
+      ><button id="clear-workspace" class="danger">Clear local workspace</button
+      ><input
+        hidden
+        id="file"
+        type="file"
+        accept=".json,application/json"
+      /><span id="notice" role="status">Local workspace: new</span>
+    </div>
+    <div class="layout">
+      <nav id="navigation" aria-label="Content editors"></nav>
+      <main id="editor" aria-label="Active document editor"></main>
+      <aside>
+        <section class="output">
+          <h2>SD output</h2>
+          <code id="destination"></code
+          ><button id="download" class="primary">Download JSON</button>
+          <p class="hint">
+            Copy the download manually to this SD path. Export referenced
+            catalogs separately.
+          </p>
+        </section>
+        <section>
+          <h2 id="validation-title">Validation</h2>
+          <ul id="issues" aria-live="polite"></ul>
+          <p id="memory" class="hint"></p>
+        </section>
+        <section>
+          <h2>JSON / repair editor</h2>
+          <p class="hint">
+            Unknown fields are retained and reported. Apply JSON edits
+            explicitly; unapplied text blocks export.
+          </p>
+          <textarea
+            id="json"
+            spellcheck="false"
+            aria-label="JSON source"
+            rows="22"
+          ></textarea
+          ><button id="apply-json">Apply JSON edits</button
+          ><button id="discard-json">Discard text edits</button>
+        </section>
+        <section class="hint">
+          Autosaved locally for this browser. JSON download remains the portable
+          backup; browser/site data can be cleared.<br /><a
+            href="README.md"
+            >Tool documentation &amp; contract notes</a
+          >
+        </section>
+      </aside>
+    </div>
+    <noscript
+      >This offline builder requires JavaScript enabled for local
+      files.</noscript
+    >
+  </body>
+</html>

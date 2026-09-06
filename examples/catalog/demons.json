@@ -1,0 +1,7 @@
+{
+  "format": "netrun-demon-catalog",
+  "version": 1,
+  "demons": [
+    { "id": "fly_demon", "name": "FLY", "interface": 4, "rez": 19, "actions": 2 }
+  ]
+}

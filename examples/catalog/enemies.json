@@ -1,0 +1,15 @@
+{
+  "format": "netrun-enemy-catalog",
+  "version": 1,
+  "enemies": [
+    {
+      "id": "zer0_runner",
+      "handle": "Zer0",
+      "interface": 4,
+      "hp": 22,
+      "actions": 2,
+      "programs": ["Hellbolt"],
+      "behavior": "sentry"
+    }
+  ]
+}

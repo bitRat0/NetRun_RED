@@ -1,0 +1,12 @@
+{
+  "format": "netrun-architecture",
+  "schemaVersion": 1,
+  "id": "mixed_object_ice",
+  "name": "MIXED OBJECT ICE",
+  "description": "A File, Black ICE placement and Enemy Netrunner share one Floor.",
+  "floors": [
+    { "id": 0, "type": "empty", "next": [1] },
+    { "id": 1, "type": "file", "dv": 6, "file": { "name": "PAYLOAD.LOG", "type": "LOG", "value": 100 }, "ice": ["ice_01"], "enemy": "nullbyte", "next": [2] },
+    { "id": 2, "type": "empty", "next": [] }
+  ]
+}

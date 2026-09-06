@@ -1,0 +1,15 @@
+{
+  "demons": [
+    {
+      "actions": 2,
+      "animation": "pulse",
+      "id": "relay_demon",
+      "interface": 3,
+      "name": "RELAY",
+      "rez": 15,
+      "visual": "orb"
+    }
+  ],
+  "format": "netrun-demon-catalog",
+  "version": 1
+}

@@ -1,0 +1,54 @@
+{
+  "demon": "relay_demon",
+  "description": "Homebrew branch, merge and catalog reference example.",
+  "floors": [
+    {
+      "dv": 6,
+      "id": 0,
+      "next": [
+        1,
+        2
+      ],
+      "security": "low",
+      "type": "password"
+    },
+    {
+      "enemy": "relay_runner",
+      "ice": [
+        "signal_ice"
+      ],
+      "id": 1,
+      "next": [
+        3
+      ],
+      "type": "black_ice"
+    },
+    {
+      "dv": 6,
+      "file": {
+        "name": "RELAY.LOG",
+        "type": "LOG",
+        "value": 10
+      },
+      "id": 2,
+      "next": [
+        3
+      ],
+      "type": "file"
+    },
+    {
+      "control": {
+        "description": "Branch merge.",
+        "name": "RELAY NODE"
+      },
+      "dv": 6,
+      "id": 3,
+      "next": [],
+      "type": "control"
+    }
+  ],
+  "format": "netrun-architecture",
+  "id": "signal_relay",
+  "name": "SIGNAL RELAY",
+  "schemaVersion": 1
+}

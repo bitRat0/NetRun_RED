@@ -1,0 +1,20 @@
+{
+  "black_ice": [
+    {
+      "animation": "pulse",
+      "atk": 4,
+      "behavior": "direct_damage",
+      "damage_dice": 1,
+      "def": 3,
+      "id": "signal_ice",
+      "name": "SIGNAL",
+      "per": 3,
+      "player_usable": true,
+      "rez": 12,
+      "spd": 4,
+      "visual": "bird"
+    }
+  ],
+  "format": "netrun-black-ice-catalog",
+  "version": 1
+}

@@ -1,0 +1,56 @@
+{
+  "format": "netrun-architecture",
+  "schemaVersion": 1,
+  "id": "basic_training_net",
+  "name": "BASIC TRAINING NET",
+  "description": "Public example scenario demonstrating basic functionality",
+  "demon": "latch",
+  "floors": [
+    {
+      "id": 0,
+      "type": "password",
+      "dv": 6,
+      "security": "low"
+    },
+    {
+      "id": 1,
+      "type": "file",
+      "dv": 6,
+      "file": {
+        "name": "ACCESS_LOG.DAT",
+        "type": "LOG FILE",
+        "value": 100
+      },
+      "ice": [
+        "tracejackal"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "control",
+      "dv": 6,
+      "control": {
+        "name": "DOOR CONTROL"
+      }
+    },
+    {
+      "id": 3,
+      "type": "file",
+      "dv": 8,
+      "file": {
+        "name": "SECURITY_BRIEF.DAT",
+        "type": "SECURITY DATA",
+        "value": 250
+      },
+      "enemy": "nullbyte"
+    },
+    {
+      "id": 4,
+      "type": "control",
+      "dv": 8,
+      "control": {
+        "name": "CORE ACCESS"
+      }
+    }
+  ]
+}
