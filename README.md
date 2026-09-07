@@ -216,7 +216,7 @@ Scenario and catalog files use these destinations:
 
 ```text
 /scenarios/<scenario>.json
-/catalog/black\_ice.json
+/catalog/black_ice.json
 /catalog/demons.json
 /catalog/enemies.json
 ```
