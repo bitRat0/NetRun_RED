@@ -17,7 +17,7 @@ use the Builder.
 
 ### 
 
-### !\[NETRUN // RED on Cardputer ADV](docs/images/netrun-red-multishow.jpg)
+### !\[NETRUN // RED on Cardputer ADV](docs/images/netrun-red-multishow.png)
 
 
 
@@ -38,7 +38,7 @@ use the Builder.
 
 
 
-!\[NETRUN // RED on Cardputer ADV](docs/images/netrun-red-fight.jpg)
+!\[NETRUN // RED on Cardputer ADV](docs/images/netrun-red-fight.png)
 
 
 
